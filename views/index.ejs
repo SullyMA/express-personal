@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How do you feel today?</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="datepicker0.css">
+</head>
+<body>
+  <h1>Daily Journal</h1>
+
+
+  <h2>Start writing...</h2>
+  <div class="container">
+    <div class="column">
+        <label for="entries"></label>
+        <textarea id="happy" name="msg" rows="5" cols="33"></textarea>
+        <input id="hiddenDate" type="date" name="date" value="">
+        <button id="happySubmit" type="submit">Submit</button>
+      </form>
+      <ul class="messages">
+        <% for(var i=0; i<messages.length; i++) {%>
+          <li class="message">
+            <span><%= messages[i].msg %></span>
+            <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <form action="/" method="get">
+    <input id="datesaved" type="date" name="date" value="">
+    <button id="Submit" type="submit">Submit</button>
+    <!-- <input type="text" name="" value=""> -->
+    <!-- <button id="pageGetter" type="button">Enter</button> -->
+  </form>
+  </div>
+  <script type="bootstrap-datepicker.js"></script>
+  <script src="main.js"></script>
+
+
+
+</body>
+</html>

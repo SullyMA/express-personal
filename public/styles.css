@@ -1,0 +1,39 @@
+body {
+  background-image: url("journal.jpg");
+  background-repeat: no-repeat;
+}
+
+#happySubmit {
+  background-color: lightpink;
+  color: grey;
+}
+#Submit {
+  background-color: lightpink;
+  color: grey;
+}
+h1{
+  color: lightgrey;
+  font-style: italic;
+  text-shadow: black;
+  font-size: 50px;
+}
+
+h2{
+  color: lightgrey;
+  font-style: italic;
+  font-size: 40px;
+}
+.container {
+  display:flex;
+
+
+
+}
+
+.column {
+  flex-grow: 1;
+}
+
+.hidden {
+  display: none;
+}
